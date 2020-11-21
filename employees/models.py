@@ -12,13 +12,13 @@ class Employee(models.Model):
     position = models.FloatField()
     user_instance = models.ForeignKey("users.User", on_delete=models.CASCADE)
 
-    created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
-    updated_At = models.DateTimeField(auto_now=True, auto_now_add=False)
+    created_at = models.DateTimeField(auto_now=True, auto_now_add=False)
+    updated_at = models.DateTimeField(auto_now=False, auto_now_add=True,null=True)
 
 
 class Supervisor(models.Model):
-    employee_iprofile = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    employee_profile = models.ForeignKey(Employee, on_delete=models.CASCADE,null=True)
     employee = models.ManyToManyField(Employee,related_name="subordinates")
 
-    created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
-    updated_At = models.DateTimeField(auto_now=True, auto_now_add=False)
+    created_at = models.DateTimeField(auto_now=True, auto_now_add=False)
+    updated_at = models.DateTimeField(auto_now=False, auto_now_add=True,null=True)

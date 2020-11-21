@@ -2,7 +2,7 @@
 
 :root{
     font-weight: normal;
-    font-size: calc(.5vw + .5rem);
+    /* font-size: calc(.5vw + .5rem); */
     
 
   }
@@ -11,7 +11,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #817a78;
+  /* color: #817a78; */
+  color: #fff;
+
   overflow-x: hidden; 
 }
 

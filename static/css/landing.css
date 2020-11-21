@@ -1,0 +1,123 @@
+.main{
+    background-image: url('../images/main-bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+.overlay{
+    background-color: rgba(72, 4, 117, 0.5);
+    height: 100vh;
+    width: 100vw;
+    
+}
+.top-right-area{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: rgba(29, 29, 29,.5);
+    width: 40%;
+}
+.top-right-area img {
+    width: 70%;
+    padding: 1em 0;
+}
+.middle-portion{
+    position: relative;
+    top: 50%;
+    left: 20%;
+    width: 40%;
+    
+}
+.middle-portion h2,.middle-portion p {
+color: #fff;
+}
+.middle-buton button{
+    border: none;
+    padding: 1em 3em;
+    background-color: rgb(72, 4, 117) ;
+    color: #fff;
+    border-radius: 10px;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-name: button-fade;
+    animation-fill-mode: forwards;
+    opacity: 0;  
+    transition-property: all;
+    transition-duration: 1s;  
+
+}
+.middle-buton button:hover{
+    background-color:rgb(43, 6, 68) ;
+    box-shadow: .1em .1em .1em .1em rgba(126, 123, 123, 0.5);
+}
+.middle-header{
+    display: flex;
+    animation-duration: 2s;
+    animation-name: top-top;
+    position: relative;
+}
+@keyframes top-top{
+    0%{
+        opacity: 0;
+        top:- 10%;
+    }
+    100%{
+        opacity: 1;
+        top: 30%;
+    }
+}
+.middle-header h2{
+    /* color: rgb(72, 4, 117) ; */
+    font-size: 3rem;
+    
+}
+.middle-header p{
+    /* color: rgb(72, 4, 117) ; */
+    margin-top: .5em;
+    margin-left: .5em;
+    font-weight: bold;
+    font-size: 1.6rem;
+   
+    
+}
+.middle-main{
+    opacity: 0;
+    animation-name: body-fade;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes body-fade{
+0%{
+    left: -30%;
+    opacity: 0;
+}
+100%{
+    left: 0%;
+    opacity: 1;
+}
+}
+
+@media(max-width:1200px){
+    .main{
+        background-size: 250%;
+    }
+ 
+}
+@media(max-width:600px){
+    .middle-portion{
+        top: 30%;
+        width: 80%;
+    }
+}
+@keyframes button-fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

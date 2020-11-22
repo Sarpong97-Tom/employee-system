@@ -29,3 +29,7 @@ class EmployeeForms(forms.Form):
             self.errors['password_confirm'] = self.error_class(['Passwords do not match'])
 
 
+class SuperVisorForm(forms.ModelForm):
+    class Meta:
+        model = Supervisor
+        fields = ['employee_profile','soburdinate']

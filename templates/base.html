@@ -29,22 +29,25 @@
                   <a id = "white" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a id = "white"  class="nav-link" href="#">Link</a>
+                  <a id = "white"  class="nav-link" href="/employees">Employeees</a>
+                </li>
+                 <li class="nav-item">
+                  <a id = "white"  class="nav-link" href="/employees/supervisors">Supervisors</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a id = "white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                    Pages
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/employees/add">Add Employee</a>
+                    <a class="dropdown-item" href="/employees/supervisors/add">Add supervisor</a>
+                    {% comment %} <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                  </div> {% endcomment %}
                 </li>
-                <li class="nav-item">
+                {% comment %} <li class="nav-item">
                   <a id = "white" class="nav-link disabled" href="#">Disabled</a>
-                </li>
+                </li> {% endcomment %}
               </ul>
 
               {% if user and user.is_authenticated %}

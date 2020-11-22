@@ -4,9 +4,22 @@
 {% block content %}
     
     <div class="">
-    <h1>Employees</h1>
-    <a href="/employees/add"> Add employee</a>
-    <div class="row">
+    <h1>Supervisors</h1>
+    <a href="/employees/supervisors/add"> Add Supervisor</a>
+ 
+     {% if not supervisors %}
+    
+   <div class="main-title">
+        <h3>
+            Sorry
+        </h3>
+    
+        <img width="45%" src="{% static 'images/not_found.png' %}" alt="" srcset="">
+        <p>No Supervisors added yet<br> <a href="/employees/supervisors/add">Click here to add an supervisor</a> </p>
+    </div>
+
+    {% else %}
+       <div class="row">
       <div class="col-2 bold">
         <p>First name</p>
       </div>
@@ -29,40 +42,28 @@
         <p>Salary</p>
       </div>
     </div>
-     {% if not employees %}
-    
-   <div class="main-title">
-        <h3>
-            Sorry
-        </h3>
-    
-        <img width="70%" src="{% static 'images/not_foud.png' %}" alt="" srcset="">
-        <p>No Employ added yet<br> <a href="/employees/add">Click here to add an employee</a> </p>
-    </div>
-
-    {% else %}
      <div class="row">
-      {% for employee in employees %}
+      {% for supervisor in supervisors %}
       <div class="col-2">
-        <p>{{employee.first_name}}</p>
+        <p>{{supervisor.first_name}}</p>
       </div>
       <div class="col-2">
-         <p>{{employee.last_name}}</p>
+         <p>{{supervisor.last_name}}</p>
       </div>
       <div class="col-3">
-         <p>{{employee.user_instance}}</p>
+         <p>{{supervisor.user_instance}}</p>
       </div>
       <div class="col-1">
-         <p>{{employee.age}}</p>
+         <p>{{supervisor.age}}</p>
       </div>
       <div class="col-2">
-        <p>{{employee.date_of_employment}}</p>
+        <p>{{supervisor.date_of_employment}}</p>
       </div>
       <div class="col-1">
-        <p>{{employee.position}}</p>
+        <p>{{supervisor.position}}</p>
       </div>
       <div class="col-1">
-        <p>{{employee.salary}}</p>
+        <p>{{supervisor.salary}}</p>
       </div>
       {% endfor %}
     </div>

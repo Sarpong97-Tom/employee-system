@@ -1,0 +1,57 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+    <div class="">
+    <h1>Employees</h1>
+    <a href="/employees/add"> Add employee</a>
+
+     {% if not employees %}
+    
+   <div class="main-title">
+        <h3>
+            Sorry
+        </h3>
+    
+        <img width="45%" src="{% static 'images/not_found.png' %}" alt="" srcset="">
+        <p>No employees added yet<br> <a href="/employees/supervisors/add">Click here to add an supervisor</a> </p>
+    </div>
+
+    {% else %}
+        <div class="row">
+      <div class="col-3 bold">
+        <p>First name</p>
+      </div>
+      <div class="col-3 bold">
+        <p class = "bold">Last name</p>
+      </div>
+      <div class="col-3">
+        <p>Email</p>
+      </div>
+      <div class="col-3">
+          <h6>Make supervisor</h6>
+      </div>
+    </div>
+     <div class="row">
+      {% for employee in employees %}
+      <div class="col-3">
+        <p>{{employee.first_name}}</p>
+      </div>
+      <div class="col-3">
+         <p>{{employee.last_name}}</p>
+      </div>
+      <div class="col-3">
+         <p>{{employee.user_instance}}</p>
+      </div>
+      <div class="col-3">
+          <p> <a href="add/{{employee.id}}">Make superviser</a> </p>
+      </div>
+      {% endfor %}
+    </div>
+    
+    {% endif %}
+   
+ 
+    </div>
+{% endblock content %}

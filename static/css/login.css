@@ -45,3 +45,34 @@ width: 60%;
         background-size: 200vw;
     }
 }
+
+
+/* congratulation page */
+
+.main-title{
+    text-align: center;
+    margin-top: 3em ;
+}
+
+
+
+
+/* footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    background-color: rgb(32, 4, 48);
+    color: #fff;
+}
+#b-color{
+    background-color: rgb(54, 6, 82);
+    color: #fff;
+}
+#white{
+    color: #fff;
+}

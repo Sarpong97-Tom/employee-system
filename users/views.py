@@ -20,14 +20,17 @@ def loginView(request):
             print(user)
             if user is not None:
                 login(request,user)
-                return redirect('/auth/congrats')
+                return redirect('/auth/congrats',{'user':user})
             else:
                 return render(request,'login.html',{'form':form,'message':'Invalid credntials'})
         else:
             return redirect('/auth/login')
 
 def congratsPageView(request):
-    return render(request,'congrats.html')
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('/auth/login')
+    return render(request,'congrats.html',{'user':user})
 
 def logoutView(request):
     user = request.user

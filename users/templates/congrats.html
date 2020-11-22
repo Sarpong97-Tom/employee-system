@@ -1,5 +1,14 @@
-{% extends 'base.html' %}
 
+{% extends 'base.html' %}
+{% load static %}
 {% block content %}
-    <h1>Congrats</h1>
+    
+    <div class="main-title">
+        <h3>
+            Congratulations <br/> {{user.email}}
+        </h3>
+    
+        <img width="50%" src="{% static 'images/winner.png' %}" alt="" srcset="">
+        <p>You have succesfully logged in <br> <a href="/">Click here to return to homepage</a> </p>
+    </div>
 {% endblock content %}

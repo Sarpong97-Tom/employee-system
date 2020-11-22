@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+    <div class="">
+    <div class="form-header">
+        <h1>Add employee</h1>
+        <img width="30%" src="{% static 'images/forms.png' %}" alt="" srcset="">
+    </div>
+
+    
+    
+   <form class="employee-form" method = "post" action="/employees/add">
+    {% csrf_token %}
+    <div class="row">
+        
+    {% for field in form  %}
+        <div class="form-group col-lg-6  col-sm-10">
+         <label for="{{field.id_for_label}}">{{field.label}}</label>
+        {{field}}
+
+        {% if field.errors %}
+        {% for error in field.errors  %}
+        <small class = "error"> {{error}}</small>
+        {% endfor %}
+        {% endif %}
+        </div>
+      
+    {% endfor %}
+    </div>
+
+   <button type="submit" class="btn btn-primary mb-3">Submit</button>
+   </form>
+    </div>
+{% endblock content %}

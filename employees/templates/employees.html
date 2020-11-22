@@ -1,0 +1,74 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+    <div class="">
+    <h1>Employees</h1>
+    <a href="/employees/add"> Add employee</a>
+    <div class="row">
+      <div class="col-2 bold">
+        <p>First name</p>
+      </div>
+      <div class="col-2 bold">
+        <p class = "bold">Last name</p>
+      </div>
+      <div class="col-2">
+        <p>Email</p>
+      </div>
+      <div class="col-1">
+        <p>Age</p>
+      </div>
+      <div class="col-2">
+        <p>Date of employment</p>
+      </div>
+      <div class="col-1">
+        <p>Position</p>
+      </div>
+      <div class="col-1">
+        <p>Salary</p>
+      </div>
+    </div>
+     {% if not employees %}
+    
+   <div class="main-title">
+        <h3>
+            Sorry
+        </h3>
+    
+        <img width="50%" src="{% static 'images/not_foud.png' %}" alt="" srcset="">
+        <p>No Employ added yet<br> <a href="/employees/add">Click here to add an employee</a> </p>
+    </div>
+
+    {% else %}
+     <div class="row">
+      {% for employee in employees %}
+      <div class="col-2">
+        <p>{{employee.first_name}}</p>
+      </div>
+      <div class="col-2">
+         <p>{{employee.last_name}}</p>
+      </div>
+      <div class="col-2">
+         <p>{{employee.user_instance}}</p>
+      </div>
+      <div class="col-1">
+         <p>{{employee.age}}</p>
+      </div>
+      <div class="col-2">
+        <p>{{employee.date_of_employment}}</p>
+      </div>
+      <div class="col-1">
+        <p>{{employee.position}}</p>
+      </div>
+      <div class="col-1">
+        <p>{{employee.salary}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    
+    {% endif %}
+   
+ 
+    </div>
+{% endblock content %}

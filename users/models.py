@@ -37,20 +37,6 @@ class UserManager(BaseUserManager):
 
         return user
 
-    def create_photographer(self, email, password):
- 
-        if password is None:
-            raise TypeError('Superusers must have a password.')
-
-        user = self.create_user(email, password)
-        user.is_photographer = True
-        user.is_staff = True
-        user.save()
-
-        return user
-
-        
-
 
 class User(AbstractBaseUser):
 

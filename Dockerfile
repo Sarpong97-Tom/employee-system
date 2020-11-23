@@ -16,7 +16,7 @@ RUN apk del .tmp
 RUN mkdir /app
 
 #copy project to the app folder
-COPY . /app
+COPY ./employeeSystem /app
 
 #specify working directory
 WORKDIR /app

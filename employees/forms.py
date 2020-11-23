@@ -27,9 +27,27 @@ class EmployeeForms(forms.Form):
         if (password != password_confirm):
             self.errors['password'] = self.error_class(['Passwords do not match'])
             self.errors['password_confirm'] = self.error_class(['Passwords do not match'])
-
+        return self.cleaned_data
 
 class SuperVisorForm(forms.ModelForm):
+    supervisor = forms.ModelChoiceField(Employee.objects.filter(is_supervisor = True),required=True,widget=forms.Select(attrs={'class':'form-control'}))
+    soburdinate = forms.ModelChoiceField(Employee.objects.all(),required=True,widget=forms.Select(attrs={'class':'form-control'}))
+
     class Meta:
         model = Supervisor
-        fields = ['employee_profile','soburdinate']
+        fields = ['supervisor','soburdinate']
+
+    def clean(self,*args, **kwargs):
+         #Prevent assigning employee to supervisor several times
+        supervisor = self.cleaned_data.get('supervisor')
+        soburdinate = self.cleaned_data.get('soburdinate')
+        try:
+            supervising = Supervisor.objects.get(Supervisor = supervisor.id)
+            if supervising.soburdinate == soburdinate:
+                self.errors['supervisor'] = self.error_class(['Supervisor already assigned to user'])
+        except Supervisor.DoesNotExist:
+            pass
+        if supervisor.id == soburdinate.id:
+            self.errors['supervisor'] = self.error_class(['You cannot add supervisor to self'])
+        return self.cleaned_data
+        

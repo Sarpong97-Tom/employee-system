@@ -15,11 +15,15 @@ class Employee(models.Model):
     
     created_at = models.DateTimeField(auto_now=True, auto_now_add=False)
     updated_at = models.DateTimeField(auto_now=False, auto_now_add=True,null=True)
+    
+    def __str__(self):
+        return self.first_name + ' '+ self.last_name
+    
 
 
 class Supervisor(models.Model):
-    employee_profile = models.ForeignKey(Employee, on_delete=models.CASCADE,null=True)
-    soburdinate = models.ManyToManyField(Employee,related_name="subordinates",null=True)
+    Supervisor = models.ForeignKey(Employee, on_delete=models.CASCADE,null=True)
+    soburdinate = models.ForeignKey(Employee,related_name="subordinates",null=True,on_delete=models.CASCADE)
 
     created_at = models.DateTimeField(auto_now=True, auto_now_add=False)
     updated_at = models.DateTimeField(auto_now=False, auto_now_add=True,null=True)

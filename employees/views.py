@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Employee
-from .forms import EmployeeForms
+from .forms import EmployeeForms,SuperVisorForm
 from users.models import User
 # Create your views here.
 def employeeListView(request):
@@ -31,17 +31,29 @@ def addEmployee(request):
                 return render(request,'add_employee.html',{'form':form})
 
 def supervisorsView(request):
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('/auth/login')
     supervisors = Employee.objects.filter(is_supervisor = True)
     return render(request,'supervisors.html',{'supervisors':supervisors})
 
 def congratsPageView(request):
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('/auth/login')
     return render(request,'employee_congrats.html')
 
 def addSupervisorView(request):
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('/auth/login')
     employess = Employee.objects.filter(is_supervisor = False)
     return render(request,'add_supervisor.html',{'employees':employess})
 
 def makeSupervisorView(request,pk):
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('/auth/login')
     try:
         employee = Employee.objects.get(pk = pk)
         employee.is_supervisor = True
@@ -49,3 +61,24 @@ def makeSupervisorView(request,pk):
         return redirect('/employees/supervisors')
     except Employee.DoesNotExist:
         return redirect('/employees/supervisors/add')
+
+def assignSupervisor(request):
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('/auth/login')
+    form = SuperVisorForm(request.POST or None)
+    if request.method == 'GET':
+        return render(request,'assign_supervisro.html',{'form':form})
+    else:
+        form = SuperVisorForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/employees/assign-supervisor/congrats')
+        else:
+            return render(request,'assign_supervisro.html',{'form':form})
+
+def assignCongratsPageView(request):
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('/auth/login')
+    return render(request,'assign_supervisor_congrats.html')

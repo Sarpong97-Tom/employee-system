@@ -5,7 +5,7 @@ COPY ./requirements.txt /requirements/txt
 
 #install dependencies to install requirements
 #.tmp is used to install these dependencies and deleted later
-RUN apt add --update --no-cache --virtual .tmp gcc libc-dev linux-headers
+RUN apk add --update --no-cache --virtual .tmp gcc libc-dev linux-headers
 
 RUN pip install -r /requirement.txt
 

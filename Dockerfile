@@ -7,7 +7,7 @@ COPY ./requirements.txt /requirements/txt
 #.tmp is used to install these dependencies and deleted later
 RUN apk add --update --no-cache --virtual .tmp gcc libc-dev linux-headers
 
-RUN pip install -r /requirement.txt
+RUN pip install -r /requirements.txt
 
 #delete requirements.txt
 RUN apk del .tmp

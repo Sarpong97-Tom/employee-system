@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 ENV PATH = "/scripts:${PATH}"
 #Copy requirements.txt to the image
-COPY ./requirements.txt /requirements/txt
+COPY ./requirements.txt /requirements.txt
 
 #install dependencies to install requirements
 #.tmp is used to install these dependencies and deleted later

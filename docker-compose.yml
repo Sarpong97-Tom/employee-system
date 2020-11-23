@@ -16,22 +16,22 @@ services:
   app:
     build:
       context: .
-    command: sh -c python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
     volumes:
       - ./employeeSystem:/app
       - /tmp/app/mysqld:/run/mysqld
+    command: sh -c python manage.py runserver 0.0.0.0:8000
     environment: 
       -DEBUG = 1
     depends_on:
       - db
-  # web:
-  #   image: nginx
-  #   volumes:
-  #   - ./templates:/etc/nginx/templates
-  #   ports:
-  #   - "8080:80"
-  #   environment:
-  #   - NGINX_HOST=foobar.com
-  #   - NGINX_PORT=80
+  web:
+    image: nginx
+    volumes:
+    - ./templates:/etc/nginx/templates
+    ports:
+    - "8080:80"
+    environment:
+    - NGINX_HOST=foobar.com
+    - NGINX_PORT=80

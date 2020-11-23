@@ -1,6 +1,6 @@
 # Base Image
 FROM python:3.8
-
+ENV PYTHONUNBUFFERED 1
 # create and set working directory
 RUN mkdir /app
 WORKDIR /app

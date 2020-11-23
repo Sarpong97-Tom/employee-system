@@ -1,5 +1,5 @@
-version: '3'
-services:
+# version: '3'
+# services:
   # db:
   #   image: mysql:8
   #   ports:
@@ -13,17 +13,17 @@ services:
   #   volumes:
   #     - /tmp/app/mysqld:/var/run/mysqld
   #     - ./db:/var/lib/mysql
-  app:
-    build:
-      context: .
-    ports:
-      - "8000:8000"
-    volumes:
-      - .:/app
-      # - /tmp/app/mysqld:/run/mysqld
-    command: sh -c python manage.py runserver 0.0.0.0:8000
-    environment: 
-      -DEBUG = 1
+  # app:
+  #   build:
+  #     context: .
+  #   ports:
+  #     - "8000:8000"
+  #   volumes:
+  #     - .:/app
+  #     # - /tmp/app/mysqld:/run/mysqld
+  #   command: sh -c python manage.py runserver 0.0.0.0:8000
+  #   environment: 
+  #     -DEBUG = 1
     # depends_on:
     #   - db
   # web:
@@ -35,3 +35,18 @@ services:
   #   environment:
   #   - NGINX_HOST=foobar.com
   #   - NGINX_PORT=80
+
+
+version: '3.7'
+
+services: 
+  app:
+    build:
+      context: .
+    ports: 
+      -"8000":"8000"
+    volumes: 
+    - .:/app
+    command: sh -c python manage.py runserver 0.0.0.0:8000
+    environment: 
+      -DEBUG=1

@@ -47,6 +47,11 @@
 # Base Image
 FROM python:3.8
 
+ENV PATH = "/scripts:${PATH}"
+#Copy requirements.txt to the image
+COPY ./requirements.txt /requirements.txt
+
+
 # create and set working directory
 RUN mkdir /app
 WORKDIR /app

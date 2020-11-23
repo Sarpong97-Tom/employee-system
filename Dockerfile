@@ -40,4 +40,4 @@ RUN pip3 install --upgrade pip
 RUN pip3 install requirements.txt
 
 EXPOSE 8888
-CMD gunicorn cfehome.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn employeeSystem.wsgi:application --bind 0.0.0.0:$PORT

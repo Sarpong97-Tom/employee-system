@@ -19,8 +19,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./employeeSystem:/app
-      - /tmp/app/mysqld:/run/mysqld
+      - .:/app
+      # - /tmp/app/mysqld:/run/mysqld
     command: sh -c python manage.py runserver 0.0.0.0:8000
     environment: 
       -DEBUG = 1

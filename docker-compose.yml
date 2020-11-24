@@ -67,6 +67,7 @@ services:
     volumes: 
       - .:/app
       # - /tmp/app/mysqld:/run/mysqld
+    command: python manage.py migrate
     command: python manage.py runserver 0.0.0.0:8000
     environment: 
       - DEBUG=1

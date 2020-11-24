@@ -2,16 +2,12 @@ import openpyxl
 import os
 
 class ExcelHelper:
-        file = None
-        wb = None
-    def __init__(self, file):
-        self.file = file
-    def loadFile(self):
-        self.wb = openpyxl.load_workbook(self.file)
+    def loadFile(self,file):
+        self.wb = openpyxl.load_workbook(file)
 
-    def getRowDict(self,sheet,form):
+    def getRowDict(self,file,sheet):
         listDict = []
-        wb = self.loadFile()
+        wb = self.loadFile(file)
         sheet = wb[sheet]
         for row in sheet:
            for firs_tname, last_name,email,password,date_of_birth,date_of_employment,position,salary,is_supervisor in row:

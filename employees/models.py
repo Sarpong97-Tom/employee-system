@@ -31,4 +31,5 @@ class Supervisor(models.Model):
 
 class ExcelFiles(models.Model):
     file = models.FileField(upload_to='excel_files')
+    activated = models.BooleanField(default = True)
     created_at = models.DateTimeField( default=datetime.datetime.now())

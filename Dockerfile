@@ -101,7 +101,7 @@ RUN mkdir -p /vol/web/static
 
 #create user
 
-RUN adduser -D user
+RUN adduser user
 
 RUN chown -R user:user /vol
 

@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'employeeSystem.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
@@ -99,16 +99,16 @@ WSGI_APPLICATION = 'employeeSystem.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'employeedb',
-        'USER': 'root',
-        'PASSWORD': 'password1',
-        'HOST': 'db',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'employeedb',
+#         'USER': 'root',
+#         'PASSWORD': 'password1',
+#         'HOST': 'db',
+#         'PORT': '5432',
+#     }
+# }
 CELERY_BROKER_URL = ""
 
 # Password validation
@@ -165,26 +165,27 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 
 ]
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'file': {
-#             'level': 'INFO',
-#             'class': 'logging.FileHandler',
-#             'filename': '/path/to/django/info.log',
-#         },
-#         'file2': {
-#             'level': 'ERROR',
-#             'class': 'logging.FileHandler',
-#             'filename': '/path/to/django/error.log',
-#         },
-#     },
-#     'loggers': {
-#         'django': {
-#             'handlers': ['file','file2'],
-#             'level': 'INFO',
-#             'propagate': True,
-#         },
-#     },
-# }
+ 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/info.log',
+        },
+          'file2': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/info.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}

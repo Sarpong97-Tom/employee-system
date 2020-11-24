@@ -17,6 +17,8 @@ services:
     environment: 
       - SECRETE_KEY=samplesecretekey123
       - ALLOWED_HOSTS=127.0.0.1,localhost
+      - DJANGO_SUPERUSER_EMAIL="admin@gmail.com"
+      - DJANGO_SUPERUSER_PASSWORD="keypass"
   poxy:
     build: 
       context: ./nginx

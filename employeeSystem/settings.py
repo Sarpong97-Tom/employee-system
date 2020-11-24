@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRETE_KEY','iamjustatemporalkey')
 # DEBUG = True
 DEBUG = bool(int(os.environ.get('DEBUG', default=1))) 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 # ALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')
 # if ALLOWED_HOSTS_ENV:
 #     ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))
@@ -93,8 +93,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'employeedb',
         'USER': 'root',
-        'PASSWORD': '12345',
-        'HOST': 'password1',
+        'PASSWORD': 'password1',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }

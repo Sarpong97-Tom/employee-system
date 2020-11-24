@@ -1,5 +1,5 @@
 from django.db import models
-
+import datetime
 # Create your models here.
 
 class Employee(models.Model):
@@ -29,5 +29,6 @@ class Supervisor(models.Model):
     updated_at = models.DateTimeField(auto_now=False, auto_now_add=True,null=True)
 
 
-# class excelFiles(models.Model):
-#     file = models.FileField(upload_to='/')
+class ExcelFiles(models.Model):
+    file = models.FileField(upload_to='excel_files')
+    created_at = models.DateTimeField( default=datetime.datetime.now())

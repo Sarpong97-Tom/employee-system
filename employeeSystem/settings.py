@@ -157,45 +157,39 @@ AUTH_USER_MODEL = 'users.User'
 
 
 STATIC_URL = '/static/'
-# MEDIA_URL = '/static/' 
+MEDIA_URL = '/media/' 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = '/vol/web/media'
+# MEDIA_ROOT = '/vol/web/media'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 
 ]
- 
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,
     'handlers': {
         'file': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'logs/debug.log',
-        },
-          'file2': {
-            'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': 'logs/debug.log',
+            'filename': 'logs/final2.log',
         },
     },
     'loggers': {
         'django': {
-            'handlers': ['file','file2'],
+            'handlers': ['file'],
             'level': 'INFO',
             'propagate': True,
         },
     },
-    'formatters': {
-        'verbose': {
+
+     'formatters': {
+        'simpleRe': {
             'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
-            'style': '{',
-        },
-        'simple': {
-            'format': '{levelname} {message}',
             'style': '{',
         },
     },
 }
+
+

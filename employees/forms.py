@@ -1,7 +1,7 @@
 from django import forms
-from .models import Employee,Supervisor
+from .models import Employee,Supervisor,ExcelFiles
 from users.models import User
-
+from utils.get_file_extention import getFileExtention
 
 class EmployeeForms(forms.Form):
     first_name = forms.CharField(max_length=50,required=True,widget=forms.TextInput(attrs={'class':'form-control','placeholder':"Enter first name"}))
@@ -51,11 +51,20 @@ class SuperVisorForm(forms.ModelForm):
             self.errors['supervisor'] = self.error_class(['You cannot add supervisor to self'])
         return self.cleaned_data
 
-class ExcelUploadForm(forms.Form):
+class ExcelUploadForm(forms.ModelForm):
     file = forms.FileField(allow_empty_file=False,required=True,help_text='upload excel file containing employees data',widget=forms.FileInput(attrs={'class':'form-control'}))
-
+    
+    class Meta:
+        model = ExcelFiles
+        fields = ['file']
 
     def clean(self,*args, **kwargs):
         file = self.cleaned_data.get('file')
-        print(file)
+
+        if(file == None):
+            self.errors['file'] = self.error_class(['File cannot be empty'])
+        
+        ext = getFileExtention(file)
+        if ext != 'xlsx':
+            self.errors['file'] = self.error_class(['File must be an excel file'])
         return  self.cleaned_data

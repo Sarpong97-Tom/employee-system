@@ -84,12 +84,15 @@ def assignCongratsPageView(request):
     return render(request,'assign_supervisor_congrats.html')
 
 def uploadExcelPageView(request):
-    form = ExcelUploadForm(data=request.POST or None)
+    form = ExcelUploadForm(request.POST or None,request.FILES or None)
     user = request.user
     if not user.is_authenticated:
         return redirect('/auth/login')
     if request.method == "GET":
         return render(request,'upload_excel.html',{'form':form})
     else:
-        print(request.POST)
-        return render(request,'upload_excel.html',{'form':form})
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+        else:
+            return render(request,'upload_excel.html',{'form':form})

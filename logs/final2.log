@@ -1,0 +1,532 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3367
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3367
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/add HTTP/1.1" 200 6719
+"GET /static/images/forms.png HTTP/1.1" 304 0
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+"GET /static/images/main2.jpg HTTP/1.1" 304 0
+"POST /employees/add-bulk HTTP/1.1" 200 4806
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /employees/add-bulk HTTP/1.1" 200 4806
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /employees/add-bulk
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 94, in uploadExcelPageView
+    print(request.POST['file'].spilt('.'))
+AttributeError: 'str' object has no attribute 'spilt'
+"POST /employees/add-bulk HTTP/1.1" 500 66990
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+Internal Server Error: /employees/add-bulk
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 94, in uploadExcelPageView
+    print(request.FILES['file'])
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+"POST /employees/add-bulk HTTP/1.1" 500 74982
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+Internal Server Error: /employees/add-bulk
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 94, in uploadExcelPageView
+    print(request.FILES['file'])
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+"POST /employees/add-bulk HTTP/1.1" 500 74982
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+"POST /employees/add-bulk HTTP/1.1" 200 4806
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /employees/add-bulk HTTP/1.1" 200 4806
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+"POST /employees/add-bulk HTTP/1.1" 200 4806
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+"POST /employees/add-bulk HTTP/1.1" 200 4806
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+"POST /employees/add-bulk HTTP/1.1" 200 4803
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+"POST /employees/add-bulk HTTP/1.1" 200 4803
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+Internal Server Error: /employees/add-bulk
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 95, in uploadExcelPageView
+    form = UploadFileForm(request.POST, request.FILES)
+NameError: name 'UploadFileForm' is not defined
+"POST /employees/add-bulk HTTP/1.1" 500 67468
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4619
+"POST /employees/add-bulk HTTP/1.1" 200 4803
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/supervisors/add HTTP/1.1" 200 3770
+"GET /static/images/not_found.png HTTP/1.1" 304 0
+"GET /employees/supervisors HTTP/1.1" 200 7710
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/supervisors/add HTTP/1.1" 200 3770
+"GET /employees/add HTTP/1.1" 200 6719
+"GET /employees/supervisors HTTP/1.1" 200 7710
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/supervisors HTTP/1.1" 200 7710
+"GET /employees/supervisors/add HTTP/1.1" 200 3770
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/supervisors HTTP/1.1" 200 7710
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: //
+"GET // HTTP/1.1" 404 2438
+"GET /media HTTP/1.1" 301 0
+Not Found: /media/
+"GET /media/ HTTP/1.1" 404 1770
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3367
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/add HTTP/1.1" 200 6719
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+Internal Server Error: /employees/add-bulk
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: table employees_excelfiles has no column named created_at
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 95, in uploadExcelPageView
+    form.save()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\models.py", line 460, in save
+    self.instance.save()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\models\base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\models\base.py", line 790, in save_base
+    updated = self._save_table(
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\models\base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\models\base.py", line 933, in _do_insert
+    return manager._insert(
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\models\query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: table employees_excelfiles has no column named created_at
+"POST /employees/add-bulk HTTP/1.1" 500 149625
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+"POST /employees/add-bulk HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3367
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/ HTTP/1.1" 200 7689
+"GET /employees/add HTTP/1.1" 200 6719
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+"POST /employees/add-bulk HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3367
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+Internal Server Error: /employees/add-bulk
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 94, in uploadExcelPageView
+    if form.is_valid():
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 172, in errors
+    self.full_clean()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 375, in full_clean
+    self._clean_form()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 402, in _clean_form
+    cleaned_data = self.clean()
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py", line 67, in clean
+    print(file.split('.'))
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'split'
+"POST /employees/add-bulk HTTP/1.1" 500 85850
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+Internal Server Error: /employees/add-bulk
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 94, in uploadExcelPageView
+    if form.is_valid():
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 172, in errors
+    self.full_clean()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 375, in full_clean
+    self._clean_form()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\forms\forms.py", line 402, in _clean_form
+    cleaned_data = self.clean()
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py", line 67, in clean
+    print(file.filename.split('.'))
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'filename'
+"POST /employees/add-bulk HTTP/1.1" 500 85878
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+"POST /employees/add-bulk HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3367
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+"POST /employees/add-bulk HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3367
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+"POST /employees/add-bulk HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3367
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader

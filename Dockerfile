@@ -110,5 +110,5 @@ RUN chmod -R 755 /vol/web
 USER user
 
 EXPOSE 8888
-# CMD gunicorn cfehome.wsgi:application --bind 0.0.0.0:$PORT
-CMD ["entrypoint.sh"]
+CMD gunicorn employeeSystem.wsgi:application --bind 0.0.0.0:$PORT
+# CMD ["python manage.py runserver"]

@@ -1,19 +1,13 @@
 version: '3.7'
 
 services:
-#  db:
-#     image: mysql:8
-#     ports:
-#       - "3306:3306"
-#     environment:
-#       - MYSQL_DATABASE='mydatabase'
-#       - MYSQL_USER='root'
-#       - MYSQL_PASSWORD='some_password'
-#       - MYSQL_ROOT_PASSWORD='some_password'
-#       - MYSQL_HOST=''
-#     volumes:
-#       - /tmp/app/mysqld:/var/run/mysqld
-#       - ./db:/var/lib/mysql
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password1
+      POSTGRES_USER: root
+      POSTGRES_DB: employeedb
 
   app:
     build:

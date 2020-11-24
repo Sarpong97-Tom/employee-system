@@ -1,42 +1,3 @@
-# version: '3'
-# services:
-  # db:
-  #   image: mysql:8
-  #   ports:
-  #     - "3306:3306"
-  #   environment:
-  #     - MYSQL_DATABASE='mydatabase'
-  #     - MYSQL_USER='root'
-  #     - MYSQL_PASSWORD='some_password'
-  #     - MYSQL_ROOT_PASSWORD='some_password'
-  #     - MYSQL_HOST=''
-  #   volumes:
-  #     - /tmp/app/mysqld:/var/run/mysqld
-  #     - ./db:/var/lib/mysql
-  # app:
-  #   build:
-  #     context: .
-  #   ports:
-  #     - "8000:8000"
-  #   volumes:
-  #     - .:/app
-  #     # - /tmp/app/mysqld:/run/mysqld
-  #   command: sh -c python manage.py runserver 0.0.0.0:8000
-  #   environment: 
-  #     -DEBUG = 1
-    # depends_on:
-    #   - db
-  # web:
-  #   image: nginx
-  #   volumes:
-  #   - ./templates:/etc/nginx/templates
-  #   ports:
-  #   - "8080:80"
-  #   environment:
-  #   - NGINX_HOST=foobar.com
-  #   - NGINX_PORT=80
-
-
 version: '3.7'
 
 services: 
@@ -47,18 +8,6 @@ services:
       POSTGRES_PASSWORD: password1
       POSTGRES_USER: root
       POSTGRES_DB: employeedb
-    # image: mysql:latest
-    # environment:
-    #   - MYSQL_DATABASE=employeedb
-    #   - MYSQL_USER=root
-    #   - MYSQL_PASSWORD=password1
-    #   - MYSQL_ROOT_PASSWORD=password1
-    #   - MYSQL_HOST=localhost
-    # volumes:
-    #   - ./mysql:/var/lib/mysql
-    #   - ./sql:/docker-entrypoint-initdb.d
-    ports: 
-      - "3306:3306"
   app:
     build:
       context: .
@@ -66,7 +15,6 @@ services:
       - "8000:8000"
     volumes: 
       - .:/app
-      # - /tmp/app/mysqld:/run/mysqld
     
     command: python manage.py runserver 0.0.0.0:8000
     environment: 

@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRETE_KEY','iamjustatemporalkey')
 # DEBUG = True
 DEBUG = bool(int(os.environ.get('DEBUG', default=1))) 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')
 if ALLOWED_HOSTS_ENV:
     ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))
@@ -82,13 +82,22 @@ WSGI_APPLICATION = 'employeeSystem.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'employeedb',
+        'USER': 'root',
+        'PASSWORD': '12345',
+        'HOST': 'password1',
+        'PORT': '3306',
     }
 }
-
 CELERY_BROKER_URL = ""
 
 # Password validation

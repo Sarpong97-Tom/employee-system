@@ -41,13 +41,19 @@ version: '3.7'
 
 services: 
   db:
-    image: mysql:latest
+    image: postgres
+    restart: always
     environment:
-      - MYSQL_DATABASE=employeedb
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=password1
-      - MYSQL_ROOT_PASSWORD=password1
-      - MYSQL_HOST=localhost
+      POSTGRES_PASSWORD: password1
+      POSTGRES_USER: root
+      POSTGRES_DB: employeedb
+    # image: mysql:latest
+    # environment:
+    #   - MYSQL_DATABASE=employeedb
+    #   - MYSQL_USER=root
+    #   - MYSQL_PASSWORD=password1
+    #   - MYSQL_ROOT_PASSWORD=password1
+    #   - MYSQL_HOST=localhost
     # volumes:
     #   - ./mysql:/var/lib/mysql
     #   - ./sql:/docker-entrypoint-initdb.d

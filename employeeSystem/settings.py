@@ -88,14 +88,25 @@ WSGI_APPLICATION = 'employeeSystem.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'employeedb',
+#         'USER': 'root',
+#         'PASSWORD': 'password1',
+#         'HOST': 'db',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'employeedb',
         'USER': 'root',
         'PASSWORD': 'password1',
         'HOST': 'db',
-        'PORT': '3306',
+        'PORT': '5432',
     }
 }
 CELERY_BROKER_URL = ""

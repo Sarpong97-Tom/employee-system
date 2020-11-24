@@ -41,15 +41,8 @@ version: '3.7'
 
 services: 
   db:
-    image: mysql:latest
-    environment:
-      - MYSQL_DATABASE=employeedb
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=password1
-      - MYSQL_ROOT_PASSWORD=password1
-      - MYSQL_HOST='' 
-    ports: 
-      - "3306:3306"
+    image: postgres
+
   app:
     build:
       context: .

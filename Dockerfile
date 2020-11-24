@@ -6,7 +6,7 @@ COPY ./requirements.txt /requirements.txt
 #install dependencies to install requirements
 #.tmp is used to install these dependencies and deleted later
 # RUN apk add --update --no-cache --virtual .tmp gcc libc-dev linux-headers
-RUN apt install mysql-server
+
 
 RUN pip install -r /requirements.txt
 

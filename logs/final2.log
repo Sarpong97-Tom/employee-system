@@ -3270,3 +3270,47 @@ E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, re
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+"GET /employees/add-bulk HTTP/1.1" 302 0
+"GET /auth/login HTTP/1.1" 200 2918
+"POST /auth/login HTTP/1.1" 302 0
+"GET /auth/congrats HTTP/1.1" 200 3647
+"GET /employees/ HTTP/1.1" 200 4237
+"GET /static/images/not_foud.png HTTP/1.1" 404 1683
+"GET /employees/add-bulk HTTP/1.1" 200 4648
+"POST /employees/add-bulk HTTP/1.1" 302 0
+"GET /employees HTTP/1.1" 301 0
+"GET /employees/ HTTP/1.1" 200 8445
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\task.py changed, reloading.
+Watching for file changes with StatReloader

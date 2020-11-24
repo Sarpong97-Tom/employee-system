@@ -1,30 +1,11 @@
 
 from celery import shared_task
-from demoapp.models import Widget
-
-
-@shared_task
-def add(x, y):
-    return x + y
-
+from .models import Employee,ExcelFiles
+import logging
 
 @shared_task
-def mul(x, y):
-    return x * y
+def createEmployee(data):
+    user = User.objects.create(password = data[5],email = data[4])
+    Employee.objects.create(first_name = data[0],last_name=data[1],age = data[2],date_of_birth = data[3],date_of_employment = data[3],user_instance = user)
+    logging.info('{}{}'.format())
 
-
-@shared_task
-def xsum(numbers):
-    return sum(numbers)
-
-
-@shared_task
-def count_widgets():
-    return Widget.objects.count()
-
-
-@shared_task
-def rename_widget(widget_id, name):
-    w = Widget.objects.get(id=widget_id)
-    w.name = name
-    w.save()

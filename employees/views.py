@@ -4,6 +4,7 @@ from .forms import EmployeeForms,SuperVisorForm,ExcelUploadForm
 from users.models import User
 from utils.excel_utils import ExcelHelper
 import openpyxl
+from .task import createEmployee
 # Create your views here.
 def employeeListView(request):
     user = request.user
@@ -106,8 +107,7 @@ def uploadExcelPageView(request):
             sheet = wb['Employees']
             for row in list(iter_rows(sheet))[1:]:
                 print(*row)
-                user = User.objects.create(password = row[5],email = row[4])
-                Employee.objects.create(first_name = row[0],last_name=row[1],age = row[2],date_of_birth = row[3],date_of_employment = row[3],user_instance = user)        
+                createEmployee(row)
             excel_path.delete()
             return redirect('/employees')
         else:

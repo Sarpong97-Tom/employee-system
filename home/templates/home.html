@@ -3,25 +3,35 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/landing.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 
       <div class="main">
         <div class="overlay">
-            <div class="top-right-area">
-            </div>
-            <div class="middle-portion">
+            <div class="middle-portion-2">
                 <div class="middle-header">
                     <h2>Welcome</h2>
-                    <p>Mpedigree</p>
+                    <p>to Mpedigree</p>
                 </div>
-                <div class="middle-main">
-                    <p>                    
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, aliquam nam. Facere eius quo recusandae est impedit inventore cum maiores provident asperiores similique aut omnis possimus, rerum officiis tempore rem?
-                    </p>
-                </div>
-                <div class="middle-buton">
-                    <a href = "auth/login"><button >Login</button></a>
-                    <p>Forgot password? <span><a href="">Click here to reset</a></span></p>
-                </div>
+                <a href="employees">
+                    <div class="bar"> <h5>
+                        Employees
+                    </h5></div>
+                </a>
+                <a href="employees/supervisors">
+                    <div class="bar"> <h5>
+                        Supervisors
+                    </h5></div>
+                </a>
+                <a href="employees/add-bulk">
+                    <div class="bar"> <h5>
+                        Add Bulk Employers
+                    </h5></div>
+                </a>
+                <a href="logs">
+                    <div class="bar"> <h5>
+                        Logs
+                    </h5></div>
+                </a>
             </div>
 
         </div>

@@ -1,0 +1,41 @@
+
+.middle-portion-2{
+    position: relative;
+top: 10%;
+margin: auto;
+}
+
+@media(min-width:900px){
+    .middle-portion-2{
+        width: 60%;
+    }
+    .bar{
+        margin: 1em auto;
+    }
+}
+.bar{
+    background-color: rgb(72, 4, 117);
+    width: 90%;
+    border-radius: 15px;
+    /* margin-left: 3em; */
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+.bar:hover{
+    background-color: rgb(115, 9, 185);
+}
+.bar h5{
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+}
+.middle-header {
+    margin: 1em 3em;
+}
+
+.middle-header h2{
+    color: rgb(167, 167, 32);
+}
+.middle-header p{
+    color: #fff
+}

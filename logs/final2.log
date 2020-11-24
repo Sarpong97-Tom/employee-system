@@ -5,3 +5,163 @@ Watching for file changes with StatReloader
 E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\home\views.py", line 10, in homeScreenView
+    return render(requst,'home.html',{'user':user})
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader_tags.py", line 270, in do_extends
+    nodelist = parser.parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static', expected 'endblock'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 155516
+"GET / HTTP/1.1" 200 4360
+"GET / HTTP/1.1" 200 4291
+"GET / HTTP/1.1" 200 4291
+"GET / HTTP/1.1" 200 4291
+"GET / HTTP/1.1" 200 4363
+"GET /static/css/landing.css HTTP/1.1" 304 0
+"GET /static/images/main-bg.jpg HTTP/1.1" 304 0
+"GET /employees/ HTTP/1.1" 200 8445
+"GET / HTTP/1.1" 200 4291
+"GET / HTTP/1.1" 200 4291
+"GET / HTTP/1.1" 200 4363
+"GET / HTTP/1.1" 200 4387
+"GET / HTTP/1.1" 200 4388
+"GET / HTTP/1.1" 200 4324
+"GET /employees/ HTTP/1.1" 200 8406
+"GET /employees/ HTTP/1.1" 200 8415
+"GET /employees/add HTTP/1.1" 200 6689
+"GET /auth/logout HTTP/1.1" 302 0
+"GET /auth/login HTTP/1.1" 200 2918
+"GET /static/images/main2.jpg HTTP/1.1" 304 0
+"POST /auth/login HTTP/1.1" 200 3014
+"POST /auth/login HTTP/1.1" 200 3014
+"POST /auth/login HTTP/1.1" 302 0
+"GET /auth/congrats HTTP/1.1" 200 3608
+"GET /employees/ HTTP/1.1" 200 8415
+"GET /employees/supervisors HTTP/1.1" 200 4448
+"GET /employees/supervisors/add HTTP/1.1" 200 6510
+"GET /employees/assign-supervisor HTTP/1.1" 200 5632
+"GET / HTTP/1.1" 200 4324
+"GET / HTTP/1.1" 200 4382
+"GET / HTTP/1.1" 200 4450
+"GET /static/css/imployee.css HTTP/1.1" 304 0
+"GET /static/css/home.css HTTP/1.1" 200 106
+"GET / HTTP/1.1" 200 4450
+"GET /static/css/home.css HTTP/1.1" 200 120
+"GET / HTTP/1.1" 200 4450
+"GET /static/css/home.css HTTP/1.1" 200 145
+"GET / HTTP/1.1" 200 4390
+"GET /static/css/home.css HTTP/1.1" 200 194
+"GET / HTTP/1.1" 200 4390
+"GET /static/css/home.css HTTP/1.1" 200 198
+"GET / HTTP/1.1" 200 4390
+"GET /static/css/home.css HTTP/1.1" 200 193
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 224
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 226
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 235
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 260
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 347
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 364
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 478
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 489
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 531
+Not Found: /bar-link
+"GET /bar-link HTTP/1.1" 404 2459
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 304 0
+Not Found: /bar-link
+"GET /bar-link HTTP/1.1" 404 2459
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 534
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 534
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 585
+"GET / HTTP/1.1" 200 4392
+"GET /static/css/home.css HTTP/1.1" 200 586
+"GET / HTTP/1.1" 200 4395
+"GET /static/css/home.css HTTP/1.1" 200 625
+"GET / HTTP/1.1" 200 4421
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 4421
+"GET /static/css/home.css HTTP/1.1" 200 673
+"GET / HTTP/1.1" 200 4421
+"GET /static/css/home.css HTTP/1.1" 200 723
+"GET / HTTP/1.1" 200 4421
+"GET /static/css/home.css HTTP/1.1" 200 724
+"GET / HTTP/1.1" 200 4421
+"GET /static/css/home.css HTTP/1.1" 200 671
+"GET / HTTP/1.1" 200 4421
+"GET /static/css/home.css HTTP/1.1" 200 670
+"GET /employees/add-bulk HTTP/1.1" 200 4650
+"GET /employees/add-bulk HTTP/1.1" 200 4650
+"GET / HTTP/1.1" 200 4421
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET /employees/ HTTP/1.1" 200 8415
+"GET /employees/supervisors/add HTTP/1.1" 200 6510
+"GET /employees/supervisors HTTP/1.1" 200 4448
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+Watching for file changes with StatReloader

@@ -26,3 +26,6 @@ services:
       - DEBUG=1
     depends_on: 
       - db
+
+  booker:
+    image: rabbitmq:3.7-alpine

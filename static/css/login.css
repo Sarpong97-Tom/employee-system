@@ -80,3 +80,9 @@ width: 60%;
 #white{
     color: #fff;
 }
+.logout{
+    border: 1px solid rgb(146, 146, 25);
+}
+.logout a{
+    padding: 1em;
+}

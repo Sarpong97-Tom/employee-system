@@ -45,7 +45,8 @@ INSTALLED_APPS = [
 
     'users',
     'employees',
-    'home'
+    'home',
+    'logger'
 ]
 
 MIDDLEWARE = [
@@ -131,7 +132,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+CELERY_BROKER_URL = 'brooker'
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 

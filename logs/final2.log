@@ -165,3 +165,45 @@ Not Found: /bar-link
 "GET /employees/supervisors HTTP/1.1" 200 4451
 "GET /employees/supervisors HTTP/1.1" 200 4451
 Watching for file changes with StatReloader
+"GET /employees/supervisors HTTP/1.1" 200 4451
+"GET /employees/supervisors HTTP/1.1" 200 4451
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 4424
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET /employees/ HTTP/1.1" 200 8418
+"GET /employees/ HTTP/1.1" 200 8418
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /logs HTTP/1.1" 200 3557
+"GET /logs HTTP/1.1" 200 3560
+"GET /logs HTTP/1.1" 200 3557
+"GET /logs HTTP/1.1" 200 3565
+"GET /logs HTTP/1.1" 200 3565
+"GET /logs HTTP/1.1" 200 3577
+"GET /logs HTTP/1.1" 200 3577
+"GET /logs HTTP/1.1" 200 3577
+"GET /logs HTTP/1.1" 200 3558
+"GET /logs HTTP/1.1" 200 3565
+"GET /logs HTTP/1.1" 200 3565
+Watching for file changes with StatReloader
+"GET /logs HTTP/1.1" 200 3565
+"GET / HTTP/1.1" 200 4432
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET /employees/ HTTP/1.1" 200 8426
+"GET / HTTP/1.1" 200 4432
+"GET /employees/ HTTP/1.1" 200 8426
+"GET /employees/supervisors HTTP/1.1" 200 4459
+"GET / HTTP/1.1" 200 4432
+"GET /employees/ HTTP/1.1" 200 8426
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.

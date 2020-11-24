@@ -173,19 +173,29 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': 'logs/info.log',
+            'filename': 'logs/debug.log',
         },
           'file2': {
             'level': 'ERROR',
             'class': 'logging.FileHandler',
-            'filename': 'logs/info.log',
+            'filename': 'logs/debug.log',
         },
     },
     'loggers': {
         'django': {
-            'handlers': ['file'],
+            'handlers': ['file','file2'],
             'level': 'INFO',
             'propagate': True,
+        },
+    },
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
         },
     },
 }

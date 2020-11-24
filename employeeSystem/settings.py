@@ -127,11 +127,44 @@ AUTH_USER_MODEL = 'users.User'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/static/'
-MEDIA_URL = '/static/media/' 
-STATIC_ROOT = '/vol/web/static'
+# STATIC_URL = '/static/static/'
+# MEDIA_URL = '/static/media/' 
+# STATIC_ROOT = '/vol/web/static'
+# MEDIA_ROOT = '/vol/web/media'
+# # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static/static"),
+
+
+STATIC_URL = '/static/'
+# MEDIA_URL = '/static/' 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = '/vol/web/media'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static/static"),
+    os.path.join(BASE_DIR, "static"),
+
 ]
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'file': {
+#             'level': 'INFO',
+#             'class': 'logging.FileHandler',
+#             'filename': '/path/to/django/info.log',
+#         },
+#         'file2': {
+#             'level': 'ERROR',
+#             'class': 'logging.FileHandler',
+#             'filename': '/path/to/django/error.log',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file','file2'],
+#             'level': 'INFO',
+#             'propagate': True,
+#         },
+#     },
+# }

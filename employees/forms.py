@@ -50,4 +50,12 @@ class SuperVisorForm(forms.ModelForm):
         if supervisor.id == soburdinate.id:
             self.errors['supervisor'] = self.error_class(['You cannot add supervisor to self'])
         return self.cleaned_data
-        
+
+class ExcelUploadForm(forms.Form):
+    file = forms.FileField(allow_empty_file=False,required=True,help_text='upload excel file containing employees data',widget=forms.FileInput(attrs={'class':'form-control'}))
+
+
+    def clean(self,*args, **kwargs):
+        file = self.cleaned_data.get('file')
+        print(file)
+        return  self.cleaned_data

@@ -47,6 +47,7 @@ services:
       - MYSQL_USER=root
       - MYSQL_PASSWORD=password1
       - MYSQL_ROOT_PASSWORD=password1
+      - MYSQL_HOST=localhost
     volumes:
       - ./mysql:/var/lib/mysql
       - ./sql:/docker-entrypoint-initdb.d

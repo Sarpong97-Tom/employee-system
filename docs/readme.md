@@ -1,0 +1,3 @@
+- docker-compose up --- starts the project in dev mode
+- admin email --- admin@gmail.com
+- password --- 

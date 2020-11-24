@@ -207,3 +207,14 @@ Watching for file changes with StatReloader
 E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
 Watching for file changes with StatReloader
 E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 4432
+"GET /static/css/base.css HTTP/1.1" 200 611
+"GET /static/css/login.css HTTP/1.1" 200 1394
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 4432
+"GET / HTTP/1.1" 200 4432
+"GET / HTTP/1.1" 200 4432
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.

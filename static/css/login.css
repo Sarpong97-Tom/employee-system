@@ -59,12 +59,11 @@ width: 60%;
 
 /* footer */
 
-.footer {
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
-    /* height: 70px; */
     background-color: rgb(32, 4, 48);
     color: #fff;
 }

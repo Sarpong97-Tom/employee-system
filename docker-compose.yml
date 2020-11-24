@@ -41,15 +41,12 @@ version: '3.7'
 
 services: 
   db:
-    image: mysql:latest
+    image: postgress
+    restart: always
     environment:
-      - MYSQL_DATABASE=employeedb
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=password1
-      - MYSQL_ROOT_PASSWORD=password1
-      - MYSQL_HOST='' 
-    ports: 
-      - "3306:3306"
+      POSTGRES_PASSWORD: example
+
+      
   app:
     build:
       context: .

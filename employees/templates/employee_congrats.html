@@ -2,7 +2,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    
+    <div class = "container">
     <div class="main-title">
         <h3>
             Congratulations
@@ -10,5 +10,6 @@
     
         <img width="50%" src="{% static 'images/winner.png' %}" alt="" srcset="">
         <p>You have succesfully added an employee<br> <a href="/employees">Click here to view detail</a> </p>
+    </div>
     </div>
 {% endblock content %}

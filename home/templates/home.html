@@ -1,5 +1,30 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-    <p> Congats page </p>
+<link rel="stylesheet" type="text/css" href="{% static 'css/landing.css' %}">
+
+      <div class="main">
+        <div class="overlay">
+            <div class="top-right-area">
+            </div>
+            <div class="middle-portion">
+                <div class="middle-header">
+                    <h2>Welcome</h2>
+                    <p>Mpedigree</p>
+                </div>
+                <div class="middle-main">
+                    <p>                    
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, aliquam nam. Facere eius quo recusandae est impedit inventore cum maiores provident asperiores similique aut omnis possimus, rerum officiis tempore rem?
+                    </p>
+                </div>
+                <div class="middle-buton">
+                    <a href = "auth/login"><button >Login</button></a>
+                    <p>Forgot password? <span><a href="">Click here to reset</a></span></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 {% endblock content %}

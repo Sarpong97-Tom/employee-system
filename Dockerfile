@@ -75,12 +75,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV PORT=8000
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        # tzdata \
-        # python3-setuptools \
+RUN apt-get upgrade && apt-get install -y --no-install-recommends \
+        tzdata \
+        python3-setuptools \
         python3-pip \
-        # python3-dev \
-        # python3-venv \
+        python3-dev \
+        python3-venv \
         git \
         && \
     apt-get clean && \

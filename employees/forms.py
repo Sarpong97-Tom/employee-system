@@ -2,6 +2,8 @@ from django import forms
 from .models import Employee,Supervisor,ExcelFiles
 from users.models import User
 from utils.get_file_extention import getFileExtention
+from utils.date_format import getTodaysDate
+from utils.excel_utils import loadWorksheet
 
 class EmployeeForms(forms.Form):
     first_name = forms.CharField(max_length=50,required=True,widget=forms.TextInput(attrs={'class':'form-control','placeholder':"Enter first name"}))
@@ -26,7 +28,13 @@ class EmployeeForms(forms.Form):
         if (password != password_confirm):
             self.errors['password'] = self.error_class(['Passwords do not match'])
             self.errors['password_confirm'] = self.error_class(['Passwords do not match'])
+        dob = self.cleaned_data.get('date_of_birth')
+
+        if getTodaysDate()<=dob:
+            self.errors['date_of_birth'] = self.error_class(['Date picked is more than today'])
         return self.cleaned_data
+
+
 
 class SuperVisorForm(forms.ModelForm):
     supervisor = forms.ModelChoiceField(Employee.objects.filter(is_supervisor = True),required=True,widget=forms.Select(attrs={'class':'form-control'}))
@@ -40,6 +48,7 @@ class SuperVisorForm(forms.ModelForm):
          #Prevent assigning employee to supervisor several times
         supervisor = self.cleaned_data.get('supervisor')
         soburdinate = self.cleaned_data.get('soburdinate')
+        
         try:
             supervising = Supervisor.objects.get(Supervisor = supervisor.id)
             if supervising.soburdinate == soburdinate:
@@ -66,4 +75,8 @@ class ExcelUploadForm(forms.ModelForm):
         ext = getFileExtention(file)
         if ext != 'xlsx':
             self.errors['file'] = self.error_class(['File must be an excel file'])
+        # num_culumn = len(list(loadWorksheet(file).rows))
+        # if len(list(loadWorksheet(file).rows)) != 8:
+        #     self.errors['file'] = self.error_class(['File has a missing culumn'])
         return  self.cleaned_data
+

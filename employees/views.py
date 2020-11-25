@@ -1,9 +1,11 @@
 from django.shortcuts import render,redirect
+import logging
 from .models import Employee,ExcelFiles
 from .forms import EmployeeForms,SuperVisorForm,ExcelUploadForm
 from users.models import User
 import openpyxl
 from utils.date_format import getAge
+from utils.excel_utils import checkduplicateEmails
 from .task import createEmployee
 from datetime import date
 # Create your views here.
@@ -102,6 +104,7 @@ def uploadExcelPageView(request):
     if request.method == "GET":
         return render(request,'upload_excel.html',{'form':form})
     else:
+        list_of_emails = list()
         if form.is_valid():
             exscel = form.save()
             excel_path =ExcelFiles.objects.get(activated = True)
@@ -109,10 +112,17 @@ def uploadExcelPageView(request):
             excel_path.save()
             wb  =openpyxl.load_workbook(excel_path.file)
             
-            sheet = wb['Employees']
+            sheet = wb.worksheets[0]
             for row in list(iter_rows(sheet))[1:]:
-                print(*row)
-                createEmployee(row)
+                
+               #Compare current email with existing if to see if its duplocated
+                isDuplicate =  checkduplicateEmails(list_of_emails,row[2])
+                if isDuplicate:
+                    logging.ERROR('Duplicate email')
+                    continue
+                else:
+                    createEmployee(row)
+                list_of_emails.append(row[2])
             excel_path.delete()
             return redirect('/employees')
         else:

@@ -2,13 +2,8 @@ import datetime,calendar
 
 from datetime import date
 
-# date_string = '2015-01-30'
-# now = date(*map(int, date_string.split('-')))
-# print(now)
-
-# def convertStringToDate(date):
-
-#     return datetime.datetime.strftime(date,'%y-%d-%m')
+def getTodaysDate():
+    return datetime.date.today()
 
 def getAge(date):
     today = datetime.date.today()

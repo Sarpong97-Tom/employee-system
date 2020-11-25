@@ -20,8 +20,7 @@ services:
       - "8000:8000"
     volumes: 
       - .:/app
-    command: python manage migrate
-    command: python manage.py runserver 0.0.0.0:8000
+    # command: python manage.py runserver 0.0.0.0:8000
     environment: 
       - DEBUG=1
     depends_on: 

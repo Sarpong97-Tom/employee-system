@@ -2,9 +2,10 @@ from django.shortcuts import render,redirect
 from .models import Employee,ExcelFiles
 from .forms import EmployeeForms,SuperVisorForm,ExcelUploadForm
 from users.models import User
-from utils.excel_utils import ExcelHelper
 import openpyxl
+from utils.date_format import getAge
 from .task import createEmployee
+from datetime import date
 # Create your views here.
 def employeeListView(request):
     user = request.user
@@ -26,9 +27,13 @@ def addEmployee(request):
             form = EmployeeForms(data=request.POST)
             if form.is_valid():
                 user = User.objects.create_user(request.POST['email'],password=request.POST['password'])
-                employee = Employee.objects.create(first_name = request.POST['first_name'],last_name = request.POST['first_name'],age =request.POST['age'],date_of_birth = request.POST['date_of_birth'],
+                employee = Employee.objects.create(first_name = request.POST['first_name'],last_name = request.POST['first_name'],date_of_birth = request.POST['date_of_birth'],
                 date_of_employment = request.POST['date_of_employment'],position = request.POST['position'],salary = request.POST['salary'],user_instance = user
                  )
+                
+                new_emp = Employee.objects.filter(pk  =employee.pk ).first()
+                new_emp.age = getAge(new_emp.date_of_birth)
+                new_emp.save()
                 return redirect('/employees/congrats')
             else:
                 return render(request,'add_employee.html',{'form':form})

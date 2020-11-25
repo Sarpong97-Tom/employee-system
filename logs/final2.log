@@ -219,3 +219,809 @@ E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py cha
 Watching for file changes with StatReloader
 E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 4432
+"GET /static/css/base.css HTTP/1.1" 304 0
+"GET /static/css/login.css HTTP/1.1" 200 1368
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET /employees/ HTTP/1.1" 200 8426
+"GET /employees/add HTTP/1.1" 200 6452
+"GET /static/images/forms.png HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 29, in addEmployee
+    age =getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 5, in getAge
+    yearDiff = today.year - date.year
+AttributeError: 'str' object has no attribute 'year'
+"POST /employees/add HTTP/1.1" 500 72799
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6452
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /employees/add HTTP/1.1" 200 6452
+"GET /employees/add HTTP/1.1" 200 6452
+"GET /employees/add HTTP/1.1" 200 6452
+"POST /employees/add HTTP/1.1" 200 6696
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 31, in addEmployee
+    age =date(date_of_birth)
+TypeError: an integer is required (got type str)
+"POST /employees/add HTTP/1.1" 500 69720
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6452
+"GET /static/css/login.css HTTP/1.1" 200 1366
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 31, in addEmployee
+    age =date(date_of_birth)
+TypeError: an integer is required (got type str)
+"POST /employees/add HTTP/1.1" 500 69724
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6452
+"GET /static/css/login.css HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 32, in addEmployee
+    age =date(date_of_birth)
+TypeError: an integer is required (got type str)
+"POST /employees/add HTTP/1.1" 500 69715
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/base.css HTTP/1.1" 304 0
+"GET /static/css/login.css HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 32, in addEmployee
+    age =date(date_of_birth)
+TypeError: an integer is required (got type str)
+"POST /employees/add HTTP/1.1" 500 69719
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/login.css HTTP/1.1" 304 0
+"POST /employees/add HTTP/1.1" 200 6763
+"POST /employees/add HTTP/1.1" 200 6670
+"GET /static/css/login.css HTTP/1.1" 304 0
+"POST /employees/add HTTP/1.1" 200 6763
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 32, in addEmployee
+    age =getAge(date(date_of_birth))
+TypeError: an integer is required (got type str)
+"POST /employees/add HTTP/1.1" 500 69736
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/login.css HTTP/1.1" 304 0
+"POST /employees/add HTTP/1.1" 200 6676
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 9, in getAge
+    date = convertToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 4, in convertToDate
+    return add_months(datetime.datetime(*[int(item) for item in date.split('-')]), 1).strftime("%Y-%m-%d")
+NameError: name 'add_months' is not defined
+"POST /employees/add HTTP/1.1" 500 76150
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/base.css HTTP/1.1" 304 0
+"GET /static/css/login.css HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 15, in getAge
+    date = convertToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 4, in convertToDate
+    return add_months(datetime.datetime(*[int(item) for item in date.split('-')]), 1).strftime("%Y-%m-%d")
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 10, in add_months
+    day = min(sourcedate.day,calendar.monthrange(year,month)[1])
+NameError: name 'calendar' is not defined
+"POST /employees/add HTTP/1.1" 500 80376
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"POST /employees/add HTTP/1.1" 200 6665
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 15, in getAge
+    date = convertToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 4, in convertToDate
+    return add_months(datetime.datetime(*[int(item) for item in date.split('-')]), 1).strftime("%Y-%m-%d")
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 10, in add_months
+    day = min(sourcedate.day,calendar.monthrange(year,month)[1])
+  File "c:\users\aifarec\appdata\local\programs\python\python39\lib\calendar.py", line 125, in monthrange
+    day1 = weekday(year, month, 1)
+  File "c:\users\aifarec\appdata\local\programs\python\python39\lib\calendar.py", line 117, in weekday
+    return datetime.date(year, month, day).weekday()
+TypeError: integer argument expected, got float
+"POST /employees/add HTTP/1.1" 500 87985
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/login.css HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 31, in addEmployee
+    age =getAge(date_of_birth)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 14, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 10, in convertStringToDate
+    return date(*map(int, date_string.split('-')))
+AttributeError: 'int' object has no attribute 'split'
+"POST /employees/add HTTP/1.1" 500 76948
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 14, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 10, in convertStringToDate
+    return date(*map(str, date_string.split('-')))
+TypeError: an integer is required (got type str)
+"POST /employees/add HTTP/1.1" 500 76672
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/login.css HTTP/1.1" 304 0
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/base.css HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 31, in addEmployee
+    age =getAge(date_of_birth)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 15, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 10, in convertStringToDate
+    year,month,day = date_string.split('-')
+AttributeError: 'int' object has no attribute 'split'
+"POST /employees/add HTTP/1.1" 500 76969
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 16, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 12, in convertStringToDate
+    return date(int(year),int(month),int(day))
+TypeError: 'str' object is not callable
+"POST /employees/add HTTP/1.1" 500 77382
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/login.css HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 17, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 13, in convertStringToDate
+    return date(int(year),int(month),int(day))
+TypeError: 'str' object is not callable
+"POST /employees/add HTTP/1.1" 500 77145
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/login.css HTTP/1.1" 304 0
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 17, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 10, in convertStringToDate
+    print(date.type)
+AttributeError: 'str' object has no attribute 'type'
+"POST /employees/add HTTP/1.1" 500 76705
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 17, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 13, in convertStringToDate
+    return date(int(year),int(month),int(day))
+TypeError: 'str' object is not callable
+"POST /employees/add HTTP/1.1" 500 77148
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2246
+"GET /static/css/base.css HTTP/1.1" 200 611
+"GET /static/css/landing.css HTTP/1.1" 200 2241
+"GET /static/css/imployee.css HTTP/1.1" 200 78
+"GET /static/images/logo.png HTTP/1.1" 200 28825
+"GET /static/images/main-bg.jpg HTTP/1.1" 200 3637861
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2572
+"GET /auth/login HTTP/1.1" 200 2918
+"GET /static/css/login.css HTTP/1.1" 200 1366
+"GET /static/images/main2.jpg HTTP/1.1" 200 3088853
+"POST /auth/login HTTP/1.1" 200 3014
+"POST /auth/login HTTP/1.1" 200 3014
+"POST /auth/login HTTP/1.1" 302 0
+"GET /auth/congrats HTTP/1.1" 200 3619
+"GET /static/images/winner.png HTTP/1.1" 200 76077
+"GET /employees HTTP/1.1" 301 0
+"GET /employees/ HTTP/1.1" 200 8426
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/images/forms.png HTTP/1.1" 200 18991
+"POST /employees/add HTTP/1.1" 200 6682
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 15, in getAge
+    date = convertStringToDate(date)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 11, in convertStringToDate
+    return datetime.datetime.strftime(date,'%y-%d-%m')
+TypeError: descriptor 'strftime' for 'datetime.date' objects doesn't apply to a 'str' object
+"POST /employees/add HTTP/1.1" 500 76937
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 18, in getAge
+    yearDiff = today.year - int(date.year)
+AttributeError: 'str' object has no attribute 'year'
+"POST /employees/add HTTP/1.1" 500 73260
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /employees/ HTTP/1.1" 200 8406
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/ HTTP/1.1" 200 8406
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /employees/
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 19, in employeeListView
+    employees['age'] = age
+TypeError: 'QuerySet' object does not support item assignment
+"GET /employees/ HTTP/1.1" 500 67830
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 4432
+"GET /static/css/base.css HTTP/1.1" 304 0
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/css/home.css HTTP/1.1" 304 0
+"GET /static/images/logo.png HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /employees/ HTTP/1.1" 200 8446
+"GET /employees/add HTTP/1.1" 200 6429
+"POST /employees/add HTTP/1.1" 200 6673
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 30, in addEmployee
+    date_of_birth = getAge(request.POST['date_of_birth'])
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 18, in getAge
+    yearDiff = today.year - int(date.year)
+AttributeError: 'str' object has no attribute 'year'
+"POST /employees/add HTTP/1.1" 500 73243
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"POST /employees/add HTTP/1.1" 302 0
+"GET /employees/congrats HTTP/1.1" 200 3640
+"GET /static/images/winner.png HTTP/1.1" 304 0
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 4432
+"GET / HTTP/1.1" 200 4432
+"GET /employees/ HTTP/1.1" 200 8919
+"GET /employees/add HTTP/1.1" 200 6429
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 33, in addEmployee
+    print(getAge(employee.date_of_birth))
+  File "E:\development\Django\mPdigreeTest\employeeSystem\utils\date_format.py", line 18, in getAge
+    yearDiff = today.year - int(date.year)
+AttributeError: 'str' object has no attribute 'year'
+"POST /employees/add HTTP/1.1" 500 73372
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"POST /employees/add HTTP/1.1" 200 6676
+Internal Server Error: /employees/add
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py", line 35, in addEmployee
+    print(getAge(new_emp.date_of_birth))
+AttributeError: 'QuerySet' object has no attribute 'date_of_birth'
+"POST /employees/add HTTP/1.1" 500 70034
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /employees/add HTTP/1.1" 200 6429
+"POST /employees/add HTTP/1.1" 200 6673
+"POST /employees/add HTTP/1.1" 302 0
+"GET /employees/congrats HTTP/1.1" 200 3640
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employees\views.py changed, reloading.
+Watching for file changes with StatReloader

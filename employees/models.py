@@ -5,7 +5,7 @@ import datetime
 class Employee(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    age = models.IntegerField()
+    age = models.IntegerField(null=True)
     date_of_birth =models.DateField( auto_now=False, auto_now_add=False)
     date_of_employment = models.DateField(auto_now=False, auto_now_add=False)
     position =  models.CharField( max_length=50)

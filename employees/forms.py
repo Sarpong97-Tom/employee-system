@@ -9,9 +9,8 @@ class EmployeeForms(forms.Form):
     email = forms.EmailField(max_length=100,required=True,widget=forms.EmailInput(attrs={'class':'form-control','placeholder':"Enter email"}))
     password = forms.CharField(max_length=100,required=True,widget=forms.PasswordInput(attrs={'class':'form-control','placeholder':"Enter password"}))
     password_confirm = forms.CharField(max_length=100,required=True,widget=forms.PasswordInput(attrs={'class':'form-control','placeholder':"Confirm password"}))
-    age = forms.IntegerField(max_value=300,widget=forms.NumberInput(attrs={'class':'form-control','placeholder':"Enter age"}))
-    date_of_birth = forms.DateField(widget=forms.DateInput(attrs={'class':'form-control','placeholder':"Enter date of birth"}))
-    date_of_employment = forms.DateField(widget=forms.DateInput(attrs={'class':'form-control','placeholder':"Enter date of employment"}))
+    date_of_birth = forms.DateField(widget=forms.DateInput(attrs={'class':'form-control','placeholder':"YYYY-MM-DD"}))
+    date_of_employment = forms.DateField(widget=forms.DateInput(attrs={'class':'form-control','placeholder':"YYYY-MM-DD"}))
     position = forms.CharField(max_length=50,widget=forms.TextInput(attrs={'class':'form-control','placeholder':"Enter position"}))
     salary = forms.FloatField(widget=forms.NumberInput(attrs={'class':'form-control','placeholder':"Enter salary"}))
 

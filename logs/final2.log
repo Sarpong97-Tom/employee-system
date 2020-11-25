@@ -2124,3 +2124,12 @@ Watching for file changes with StatReloader
 "GET /employees/ HTTP/1.1" 200 6331
 "GET /employees/ HTTP/1.1" 200 6331
 Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 4541
+"GET / HTTP/1.1" 200 4541
+"GET /employees/ HTTP/1.1" 200 6331
+"GET /employees/ HTTP/1.1" 200 6331
+"GET /employees/ HTTP/1.1" 200 6331
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.

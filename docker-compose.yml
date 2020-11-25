@@ -25,7 +25,7 @@ services:
       - DEBUG=1
     depends_on: 
       - db
-      - rabbitmq
+      - booker
       - celery_worker
 
   booker:
@@ -35,5 +35,5 @@ services:
       command: celery -A employeeSystem worker --loglevel = ifo
       ports: []
       depends_on: 
-        - rabbitmq
+        - booker
         - postgres

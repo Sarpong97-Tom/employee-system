@@ -25,7 +25,15 @@ services:
       - DEBUG=1
     depends_on: 
       - db
+      - rabbitmq
+      - celery_worker
 
   booker:
     image: rabbitmq:3.7-alpine
-    celery_worker
+  celery_worker:
+      <<: *app
+      command: celery -A tickets worker --loglevel = ifo
+      ports: []
+      depends_on: 
+        - rabbitmq
+        - postgres

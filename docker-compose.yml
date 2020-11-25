@@ -32,7 +32,7 @@ services:
     image: rabbitmq:3.7-alpine
   celery_worker:
       <<: *app
-      command: celery -A tickets worker --loglevel = ifo
+      command: celery -A employeeSystem worker --loglevel = ifo
       ports: []
       depends_on: 
         - rabbitmq

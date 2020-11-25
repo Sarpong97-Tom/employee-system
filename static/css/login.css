@@ -56,13 +56,13 @@ width: 60%;
 
 
 .main-page-content{
-    height: 70vh;
+   min-height: 70vh;
 }
 
 /* footer */
 
 footer {
-    position: sticky;
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;

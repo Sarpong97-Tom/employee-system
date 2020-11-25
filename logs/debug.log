@@ -11,8 +11,8 @@ Watching for file changes with StatReloader
 E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
 Watching for file changes with StatReloader
 E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
-INFO 2020-11-25 14:06:16,356 autoreload 13232 14172 Watching for file changes with StatReloader
-INFO 2020-11-25 14:06:18,829 autoreload 13232 14172 E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\development\Django\mPdigreeTest\employeeSystem\employeeSystem\settings.py changed, reloading.
 INFO 2020-11-25 14:06:19,370 autoreload 17848 6404 Watching for file changes with StatReloader
 INFO 2020-11-25 14:06:21,103 basehttp 17848 8308 "GET / HTTP/1.1" 200 2246
 INFO 2020-11-25 14:20:07,595 autoreload 17848 6404 E:\development\Django\mPdigreeTest\employeeSystem\logger\views.py changed, reloading.

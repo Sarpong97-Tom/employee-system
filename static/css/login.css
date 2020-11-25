@@ -56,14 +56,12 @@ width: 60%;
 
 
 .main-page-content{
-   min-height: 70vh;
+   min-height: 80vh;
 }
 
 /* footer */
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: center;
     background-color: rgb(32, 4, 48);
@@ -71,7 +69,7 @@ footer {
 }
 
 .footer p {
-    padding: 2em;
+    padding: 1em;
     margin: auto;
 }
 #b-color{

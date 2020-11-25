@@ -3,13 +3,23 @@
 {% load static %}
 {% block content %}
     <div class = "container">
-    <div class="main-title">
-        <h3>
+  
+    {% if logs == Null %}
+     <div class="main-title"
+      <h3>
             Sorry
         </h3>
     
         <img width="50%" src="{% static 'images/not_found.png' %}" alt="" srcset="">
         <p>No critical log to display</p>
     </div>
+    {% else %}
+    <h3>Logs </h3>
+    {% for log in logs %}
+    
+        <p> {{log}} </p>
+    {% endfor %}
+    {% endif %}
+      
     </div>
 {% endblock content %}

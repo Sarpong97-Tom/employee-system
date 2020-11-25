@@ -1,0 +1,117 @@
+ERROR 2020-11-25 14:25:23,722 log 3532 17540 Internal Server Error: /logs
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: '==[]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\logger\views.py", line 7, in logPageView
+    return render(request,'logs.html',{'logs':logs})
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader_tags.py", line 270, in do_extends
+    nodelist = parser.parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\defaulttags.py", line 964, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\defaulttags.py", line 897, in __init__
+    super().__init__(*args, **kwargs)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\defaulttags.py", line 900, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==[]' from '==[]'
+ERROR 2020-11-25 14:25:23,739 basehttp 3532 17540 "GET /logs HTTP/1.1" 500 197606
+ERROR 2020-11-25 14:25:38,529 log 3532 17540 Internal Server Error: /logs
+Traceback (most recent call last):
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\development\Django\mPdigreeTest\employeeSystem\logger\views.py", line 7, in logPageView
+    return render(request,'logs.html',{'logs':logs})
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader_tags.py", line 270, in do_extends
+    nodelist = parser.parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\defaulttags.py", line 964, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\smartif.py", line 190, in parse
+    retval = self.expression()
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\smartif.py", line 200, in expression
+    left = t.nud(self)
+  File "E:\development\Django\mPdigreeTest\venv\lib\site-packages\django\template\smartif.py", line 22, in nud
+    raise parser.error_class(
+django.template.exceptions.TemplateSyntaxError: Not expecting '==' in this position in if tag.
+ERROR 2020-11-25 14:25:38,542 basehttp 3532 17540 "GET /logs HTTP/1.1" 500 179801
